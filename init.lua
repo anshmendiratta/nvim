@@ -11,6 +11,12 @@ for _, module in ipairs(modules) do
   end
 end
 
+vim.cmd.colorscheme 'nano-theme'
+vim.api.nvim_set_hl(0, 'EndOfBuffer', { fg = '#053230' })
+vim.api.nvim_set_hl(0, 'CursorLine', { bg = none })
+vim.api.nvim_set_hl(0, 'CursorLine', { bg = none })
+vim.api.nvim_set_hl(0, 'CursorLineNr', { bg = none })
+
 -- Highlight on yank
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
 vim.api.nvim_create_autocmd('TextYankPost', {

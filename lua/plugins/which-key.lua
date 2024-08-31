@@ -1,0 +1,16 @@
+require('which-key').register {
+  { '', desc = '<leader>r_', hidden = true },
+  { '', desc = '<leader>d_', hidden = true },
+  { '', group = '[D]ocument' },
+  { '', group = '[G]it' },
+  { '', group = 'More git' },
+  { '', desc = '<leader>g_', hidden = true },
+  { '', desc = '<leader>h_', hidden = true },
+  { '', desc = '<leader>c_', hidden = true },
+  { '', desc = '<leader>w_', hidden = true },
+  { '', group = '[S]earch' },
+  { '', group = '[C]ode' },
+  { '', desc = '<leader>s_', hidden = true },
+  { '', group = '[W]orkspace' },
+  { '', group = '[R]ename' },
+}
