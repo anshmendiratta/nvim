@@ -4,9 +4,9 @@ vim.cmd 'set noshowmode'
 vim.cmd 'set laststatus=0'
 
 vim.wo.fillchars = 'eob: '
-vim.wo.number = true
-vim.wo.relativenumber = true
-vim.wo.signcolumn = 'no'
+vim.wo.number = false
+vim.wo.relativenumber = false
+vim.wo.signcolumn = 'yes'
 
 vim.opt.inccommand = 'split'
 vim.opt.undofile = true
