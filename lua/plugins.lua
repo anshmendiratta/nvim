@@ -15,38 +15,38 @@ require("lazy").setup({
 	"tpope/vim-fugitive",
 	"tpope/vim-rhubarb",
 	"tpope/vim-sleuth",
-	"nyoom-engineering/oxocarbon.nvim",
-	"kyazdani42/blue-moon",
-	"RRethy/base16-nvim",
-	{ "gaoDean/fstatus.nvim", opts = {} },
+	{ "sindrets/winshift.nvim", opts = {} },
+	{ "nvim-treesitter/nvim-treesitter-context", opts = {} },
 	{ "numtostr/comment.nvim", opts = {} },
-	{ "yorickpeterse/nvim-pqf", opts = {} },
 	{ "simrat39/rust-tools.nvim", opts = {} },
 	{ "folke/which-key.nvim", opts = {} },
 	{ "nvim-focus/focus.nvim", opts = {} },
-	{
-		"lukas-reineke/indent-blankline.nvim",
-		config = function()
-			require("ibl").setup({
-				scope = {
-					enabled = false,
-				},
-			})
-		end,
-	},
+
 	{
 		"folke/todo-comments.nvim",
 		dependencies = { "nvim-lua/plenary.nvim" },
 		opts = {},
 	},
-	{ "sindrets/winshift.nvim", opts = {} },
-	{ "nvim-treesitter/nvim-treesitter-context", opts = {} },
+	{
+		"dgagn/diagflow.nvim",
+		opts = {},
+	},
 	{
 		"nvim-treesitter/nvim-treesitter",
 		dependencies = { "nvim-treesitter/nvim-treesitter-textobjects" },
 		build = ":TSUpdate",
 	},
-
+	{
+		"blazkowolf/gruber-darker.nvim",
+		opts = {
+			italic = {
+				strings = false,
+				comments = false,
+				operators = false,
+				folds = false,
+			},
+		},
+	},
 	{
 		"neovim/nvim-lspconfig",
 		dependencies = {

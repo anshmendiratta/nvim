@@ -11,8 +11,7 @@ for _, module in ipairs(modules) do
 	end
 end
 
-vim.cmd.colorscheme("default")
-vim.api.nvim_set_hl(0, "Normal", { bg = "#262626" })
+vim.cmd.colorscheme("gruber-darker")
 
 -- Highlight on yank
 local highlight_group = vim.api.nvim_create_augroup("YankHighlight", { clear = true })
