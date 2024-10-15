@@ -15,12 +15,19 @@ require("lazy").setup({
 	"tpope/vim-fugitive",
 	"tpope/vim-rhubarb",
 	"tpope/vim-sleuth",
+	"folke/zen-mode.nvim",
 	{ "sindrets/winshift.nvim", opts = {} },
 	{ "nvim-treesitter/nvim-treesitter-context", opts = {} },
 	{ "numtostr/comment.nvim", opts = {} },
 	{ "simrat39/rust-tools.nvim", opts = {} },
 	{ "folke/which-key.nvim", opts = {} },
 	{ "nvim-focus/focus.nvim", opts = {} },
+
+	{ "santos-gabriel-dario/darcula-solid.nvim", dependencies = {
+		"rktjmp/lush.nvim",
+	} },
+
+	{ "notken12/base46-colors" },
 
 	{
 		"folke/todo-comments.nvim",
@@ -38,14 +45,14 @@ require("lazy").setup({
 	},
 	{
 		"blazkowolf/gruber-darker.nvim",
-		opts = {
-			italic = {
-				strings = false,
-				comments = false,
-				operators = false,
-				folds = false,
-			},
-		},
+		-- opts = {
+		-- 	italic = {
+		-- 		strings = false,
+		-- 		comments = false,
+		-- 		operators = false,
+		-- 		folds = false,
+		-- 	},
+		-- },
 	},
 	{
 		"neovim/nvim-lspconfig",

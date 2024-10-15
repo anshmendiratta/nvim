@@ -11,7 +11,8 @@ for _, module in ipairs(modules) do
 	end
 end
 
-vim.cmd.colorscheme("gruber-darker")
+vim.cmd.colorscheme("darcula-solid")
+vim.api.nvim_set_hl(0, "EndOfBuffer", { fg = "#262627" })
 
 -- Highlight on yank
 local highlight_group = vim.api.nvim_create_augroup("YankHighlight", { clear = true })

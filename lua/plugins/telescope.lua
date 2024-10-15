@@ -1,6 +1,6 @@
 require("telescope").setup({
 	defaults = {
-		border = true,
+		border = false,
 		mappings = {
 			i = {
 				["<C-u>"] = false,
